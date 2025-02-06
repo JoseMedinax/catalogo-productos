@@ -1,0 +1,49 @@
+/* Custom styles for the catalog */
+
+/* Smooth scrolling behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom card hover effect */
+.product-card {
+    transition: transform 0.2s ease-in-out;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Loading animation */
+.loading-spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #22c55e;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
